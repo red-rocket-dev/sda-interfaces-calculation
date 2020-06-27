@@ -17,11 +17,12 @@ public abstract class TwoNumbersCalculation implements MathCalculation {
         this.b = b;
     }
 
-    public double getA() {
+    // modyfikator final
+    public final double getA() {
         return a;
     }
 
-    public double getB() {
+    public final double getB() {
         return b;
     }
 }
