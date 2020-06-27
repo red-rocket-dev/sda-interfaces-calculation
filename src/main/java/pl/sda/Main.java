@@ -1,5 +1,12 @@
 package pl.sda;
 
+import pl.sda.calculate.MathCalculation;
+import pl.sda.calculate.impl.MultiplicationCalculation;
+import pl.sda.calculate.impl.SumCalculation;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         /*
@@ -90,5 +97,9 @@ public class Main {
            new IncrementationCalculation(calculationResult) i NIE powinniśmy inkrementować queueIndex (bo nic nie pobieramy z kolejki).
            9. Powinno działać :)
          */
+
+        MathCalculation sumCalculation = new MultiplicationCalculation(4, 4);
+        System.out.println(sumCalculation.calculate());
+
     }
 }
