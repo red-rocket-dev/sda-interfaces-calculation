@@ -8,8 +8,8 @@ package pl.sda.calculate.impl;
                  Pamiętaj, że nie mamy dostępu bezpośredniego do pół z klasy nadrzędnej, ale może da się dostać ich wartość jakąś metodą?
                  Podpowiedź zapisana od tyłu: (: )(Bteg + )(Ateg
  */
-public class MultiplicationCalculation extends TwoNumbersCalculation {
-    public MultiplicationCalculation(double a, double b) {
+public class MultiplyCalculation extends TwoNumbersCalculation {
+    public MultiplyCalculation(double a, double b) {
         super(a, b);
     }
 

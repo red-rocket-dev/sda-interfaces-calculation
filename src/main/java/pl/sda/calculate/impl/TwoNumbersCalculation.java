@@ -8,18 +8,12 @@ import pl.sda.calculate.MathCalculation;
               * Powinna mieć konstruktor przyjmujący "a" i "b" w argumentach i przypisujący do pola
               * Powinna mieć gettery dla "a" i "b"
  */
-public abstract class TwoNumbersCalculation implements MathCalculation {
-    private double a;
+public abstract class TwoNumbersCalculation extends OneNumberOperation {
     private double b;
 
     public TwoNumbersCalculation(double a, double b) {
-        this.a = a;
+        super(a);
         this.b = b;
-    }
-
-    // modyfikator final
-    public final double getA() {
-        return a;
     }
 
     public final double getB() {
